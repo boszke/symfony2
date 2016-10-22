@@ -1,0 +1,4 @@
+services:
+#    eduweb_training.example:
+#        class: Eduweb\TrainingBundle\Example
+#        arguments: ["@service_id", "plain_value", %parameter%]

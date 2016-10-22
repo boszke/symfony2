@@ -1,0 +1,3 @@
+eduweb_training_homepage:
+    path:     /
+    defaults: { _controller: EduwebTrainingBundle:Default:index }
