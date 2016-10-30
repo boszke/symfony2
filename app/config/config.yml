@@ -1,5 +1,6 @@
 imports:
     - { resource: parameters.yml }
+    - { resource: @EduwebTrainingBundle/Resources/config/parameters.yml }
     - { resource: security.yml }
     - { resource: services.yml }
     - { resource: "@EduwebTrainingBundle/Resources/config/services.yml" }

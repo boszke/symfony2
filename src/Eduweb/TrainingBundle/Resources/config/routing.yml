@@ -3,6 +3,39 @@ eduweb_training_homepage:
     defaults: { _controller: EduwebTrainingBundle:Default:index }
     
 eduweb_training_registerUser:
-    pattern:    /register-user
+    pattern:    /register-user/{name}-{age}-{role}
     defaults:
         _controller: EduwebTrainingBundle:Default:registerUser
+        role: user
+    requirements :
+        age: "\d+"
+        role: user|admin
+    methods: [GET]
+    
+eduweb_training_simple1:
+    pattern:    /simple
+    defaults:
+        _controller:    EduwebTrainingBundle:Default:simple1
+    
+eduweb_training_simple2:
+    pattern:    /simple
+    defaults:
+        _controller:    EduwebTrainingBundle:Default:simple2
+        
+#eduweb_training_annotations:
+#    resource: "@EduwebTrainingBundle/Controller/DefaultController.php"
+#    type: annotation
+
+eduweb_training_annotations:
+    resource: "@EduwebTrainingBundle/Controller"
+    type: annotation
+    
+#eduweb_training_registerUser:
+#    pattern:    /edu-register
+#    defaults:
+#        _controller:    EduwebTrainingBundle:Default:simple1
+
+#eduweb_training_aboutPage:
+#    pattern: /about
+#    defaults:
+#        _controller: EduwebTrainingBundle:Pages:about

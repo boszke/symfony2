@@ -5,3 +5,4 @@ eduweb_training:
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation
+    prefix: /acme
